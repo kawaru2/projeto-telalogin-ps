@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comércio-P.S/cadastro</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <img src="" alt="logo da empresa">
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Bem vindo ao comércio P.S, faça o login ou cadastre-se para saber das novidades!</p>
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <label for="ilogin"></label>
+                        <input type="email" name="login" id="ilogin" maxlength="30" placeholder="seu e-mail" required>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <label for="isenha"></label>
+                        <input type="password" name="senha" id="isenha" minlength="8" maxlength="16" placeholder="sua senha" required>
+                    </div>
+                    <input type="submit" value="Login">
+                </form>
+                <a href="./cadastro.html"><button>Cadastre-se</button></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
