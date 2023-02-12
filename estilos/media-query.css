@@ -1,0 +1,27 @@
+/*
+
+Mobile first = 480px -- 720px
+Tablet = 721px -- 900px
+Notebook = 901px -- 1200px
+More = 1201px
+
+*/
+
+/* tablet */
+@media screen and (min-width:721px) and (max-width:900px) {
+    #login {
+        height: 80vh;
+        width: 80vw;
+    }
+
+    #imagem {
+        float: left;
+        width: 40%;
+        height: 100vh;
+    }
+
+    #formulario {
+        float: right;
+        width: 60%;
+    }
+}
