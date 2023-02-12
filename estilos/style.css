@@ -65,7 +65,7 @@ main {
     height: 40px;
     margin: 10px 0px;
     border-radius: 8px;
-    border: 2px solid var(--cor-contraste);
+    border: 2px solid var(--cor-contaste);
 }
 
 .campo span {
@@ -80,6 +80,7 @@ main {
     font-size: 1em;
     width: calc(100% - 46px);
     height: 100%;
+    /* border: none; */
     border-radius: 8px;
     padding: 4px;
     /* NECESSÁRIO PARA AJUSTAR O, INPUT POR, CONTA DO ÍCONE DO GOOGLE.*/
@@ -96,6 +97,7 @@ main {
     margin: 10px 0px;
     cursor: pointer;
     border: 2px solid var(--cor-extra);
+    border-radius: 15px;
 }
 
 #entrar:hover {
@@ -111,6 +113,7 @@ main {
     margin: 10px 0px;
     cursor: pointer;
     border: 2px solid var(--cor-extra);
+    border-radius: 15px;
 }
 
 #formulario button:hover {

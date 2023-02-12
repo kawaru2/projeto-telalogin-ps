@@ -3,7 +3,7 @@
 Mobile first = 579px
 Tablet = 580px -- 768px
 Notebook = 769px -- 1069px
-More = 1201px
+More = 1070px
 
 */
 
@@ -13,7 +13,7 @@ More = 1201px
         background-image: linear-gradient(to top, var(--cor-destaque2), var(--cor-contraste));
     }
     #login {
-        height: 320px;
+        height: 365px;
         width: 80vw;
     }
 
@@ -27,8 +27,31 @@ More = 1201px
         float: right;
         width: 60%;
     }
+
+    #formulario h1 {
+        font-size: 1.8em;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.509);
+    }
+
+    #formulario p {
+        font-size: 1em;
+    }
+
+    .campo input {
+        font-size: 1.3em;
+        transform: translateY(-11px);
+    }
+
+    #entrar {
+        height: 50px;
+    }
+
+    #formulario button {
+        height: 50px;
+    }
 }
 
+/* NOTEBOOK AND MORE */
 @media screen and (min-width:993px) {
     body {
         background-image: linear-gradient(to top, var(--cor-destaque2), var(--cor-contraste));
@@ -58,15 +81,26 @@ More = 1201px
         font-size: 1.2em;
     }
 
+    .campo span {
+        font-size: 2.3em;
+    }
+
+    .campo input {
+        font-size: 1.5em;
+        transform: translateY(-14px);
+    }
+
     #entrar {
         height: 60px;
         font-size: 1.5em;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.529);
+        border-radius: 30px;
     }
 
     #formulario button {
         height: 60px;
         font-size: 1.5em;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.529);
+        border-radius: 30px;
     }
 }
