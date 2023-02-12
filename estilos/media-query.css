@@ -1,27 +1,72 @@
 /*
 
-Mobile first = 480px -- 720px
-Tablet = 721px -- 900px
-Notebook = 901px -- 1200px
+Mobile first = 579px
+Tablet = 580px -- 768px
+Notebook = 769px -- 1069px
 More = 1201px
 
 */
 
 /* tablet */
-@media screen and (min-width:721px) and (max-width:900px) {
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: linear-gradient(to top, var(--cor-destaque2), var(--cor-contraste));
+    }
     #login {
-        height: 80vh;
+        height: 320px;
         width: 80vw;
     }
 
     #imagem {
         float: left;
         width: 40%;
-        height: 100vh;
+        height: 100%;
     }
 
     #formulario {
         float: right;
         width: 60%;
+    }
+}
+
+@media screen and (min-width:993px) {
+    body {
+        background-image: linear-gradient(to top, var(--cor-destaque2), var(--cor-contraste));
+    }
+
+    #login {
+        height: 400px;
+        width: 900px;
+    }
+
+    #imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    #formulario {
+        float: left;
+        width: 50%;
+    }
+
+    #formulario h1 {
+        font-size: 2.2em;
+    }
+
+    #formulario p {
+        font-size: 1.2em;
+    }
+
+    #entrar {
+        height: 60px;
+        font-size: 1.5em;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.529);
+    }
+
+    #formulario button {
+        height: 60px;
+        font-size: 1.5em;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.529);
     }
 }
