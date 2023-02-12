@@ -1,3 +1,10 @@
+:root {
+    --cor-destaque: #AB2346;
+    --cor-contraste: #588B8B;
+    --cor-destaque2: #C9F299;
+    --cor-extra: #C16200;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -6,7 +13,7 @@
 }
 
 body, html {
-    background-color: red;
+    background-color: var(--cor-destaque);
     width: 100vw;
     height: 100vh;
 }
@@ -15,7 +22,6 @@ main {
     position: relative;
     height: 100vh;
     width: 100vw;
-    
 }
 
 #login {
@@ -29,6 +35,8 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* A FUNÇÃO DO OVERFLOW É PARA AJUSTAR A BORDA EM TODOS OS ÂNGULOS (DESATIVE E OLHE NO CANTO SUPERIOR DIREITO */
+    overflow: hidden;
 }
 
 #formulario {
@@ -49,22 +57,22 @@ main {
 }
 
 .campo {
-    background-color: brown;
+    background-color: var(--cor-contraste);
     height: 40px;
     margin: 5px 0px;
     border-radius: 8px;
-    border: 2px solid brown;
+    border: 2px solid var(--cor-contraste);
 }
 
 .campo span {
     font-size: 2em;
     width: 40px;
     padding: 5px;
-    color: white;
+    color: var(--cor-destaque2);
 }
 
 .campo input {
-    background-color: greenyellow;
+    background-color: var(--cor-destaque2);
     font-size: 1em;
     width: calc(100% - 46px);
     height: 100%;
@@ -76,4 +84,32 @@ main {
 
 .campo input:focus-within {
     background-color: white;
+}
+
+#entrar {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border: 2px solid var(--cor-destaque);
+}
+
+#entrar:hover {
+    background-color: var(--cor-contraste);
+    color: white;
+}
+
+#formulario a {display: block; height: 40px;}
+
+#formulario button {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border: 2px solid var(--cor-destaque);
+}
+
+#formulario button:hover {
+    background-color: var(--cor-contraste);
+    color: white;
 }
