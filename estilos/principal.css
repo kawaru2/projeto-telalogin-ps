@@ -10,14 +10,16 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
-    width: 98vw;
+    width: 96vw;
     height: 97vh;
     margin: auto;
     background-color: var(--cor-destaque);
     font-size: .8em;
+    box-sizing: border-box;
 }
 
 .cabecalho {
@@ -28,32 +30,58 @@ body {
 }
 
 .cabecalho h1 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 1.4em;
     text-align: center;
 }
 
-.cabecalho ul li {
-    list-style: none;
-    margin-bottom: 25px;
+#menubar {
+    /* TAMANHO DO ICONE */
+    width: 50px;
 }
 
-.cabecalho a {
+.menu ul {
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.menu li {
+    background-color: white;
+    height: 20px;
+    text-align: center;
+    list-style: none;
+    margin: 5px 0px;
+    padding: 5px;
+    border: 2px solid var(--cor-destaque);
+    border-radius: 10px;
+}
+
+.menu a {
+    display: block;
+    /* padding: 5px; */
     font-size: 1.2em;
     text-decoration: none;
-    color: black;
-    padding: 5px;
+    color: var(--cor-extra);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.cabecalho a:hover {
+.menu li:hover {
     background-color: var(--cor-contraste);
+    border: 2px solid red;
     transition: background-color .3s;
+}
+
+.menu a:hover {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 #principal {
     background-color: white;
     margin: 0px 20px;
     padding: 10px;
+    border-radius: 20px;
 }
 
 #principal h2 {
@@ -67,4 +95,11 @@ body {
     justify-content: space-between;
     list-style: none;
     margin: 10px;
+}
+
+.rodapé {
+    background-color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
 }
