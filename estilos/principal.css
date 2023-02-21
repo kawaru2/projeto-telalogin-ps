@@ -19,7 +19,6 @@ body {
     margin: auto;
     background-color: var(--cor-destaque);
     font-size: .8em;
-    box-sizing: border-box;
 }
 
 .cabecalho {
@@ -30,9 +29,16 @@ body {
 }
 
 .cabecalho h1 {
-    margin-bottom: 20px;
+    margin: 20px 0px;
     font-size: 1.4em;
     text-align: center;
+}
+
+.logo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: auto;
 }
 
 #menubar {
@@ -63,6 +69,7 @@ body {
     text-decoration: none;
     color: var(--cor-extra);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+
 }
 
 .menu li:hover {
