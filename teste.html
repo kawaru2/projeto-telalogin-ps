@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comércio P.S</title>
+    <link rel="stylesheet" href="./estilos/teste.css">
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
         <div>
-            <img src="./imagens/P.S-light-mode.png" alt="Logo da empresa">
+            <img class="logo" src="./imagens/P.S-light-mode.png" alt="Logo da empresa">
             <h1>Seja bem vindo ao comércio P.S</h1>
         </div>
-        <div>
+        <div class="menu">
             <nav>
-                <img src="./imagens/menu-burguer.svg" alt="menu hamburguer" onclick="menu()">
+                <img class="burguer" src="./imagens/menu-burguer.svg" alt="menu hamburguer" onclick="menu()">
                 <ul>
                     <li>Início</li>
                     <li>Produtos</li>
@@ -26,13 +27,13 @@
         </div>
     </header>
     <main>
-        <section>
+        <section id="principal">
             <div>
                 <h2>Abaixo você encontra alguns itens de nossa loja. Para uma melhor visualização, vá até o menu e escolha a opção <a href="#">produtos</a></h2>
             </div>
             <div>
                 <!-- PRODUTOS -->
-                <ul>
+                <ul class="produtos">
                     <li>
                         <h3>Arroz</h3>
                         <img src="" alt="">
@@ -60,14 +61,14 @@
                 </ul>
             </div>
             <div>
-                <h2>Atenção!</h2>
+                <h2><span>Atenção!</span></h2>
                 <p>Não esqueça de conferir nossas ofertas e tirar suas dúvidas nos nossos canais de atendimento, no menu temos a opção de <a href="#">contato</a></p>
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="rodapé">
         <div>
-            <p>Site desenvolvido por <a href="#">João_Barros</a></p>
+            <p>Site desenvolvido por <a href="#">@João_Barros</a></p>
         </div>
     </footer>
 </body>
